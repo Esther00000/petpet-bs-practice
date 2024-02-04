@@ -1,0 +1,138 @@
+$circle-size : 8px;
+$progressbar-height : 2px;
+.modal-title{
+  font-size: 24;
+  font-weight: 700;
+  color: $success;
+}
+
+// 進度條  start =============================================================
+/* progress 進度條 */
+.modal-progressbar .modal-step {
+  width: calc(100% / 3);
+  float: left;
+  text-align: center;
+  position: relative;
+}
+
+/* circle */
+.modal-progressbar .modal-step:before {
+  content: "";
+  width: $circle-size;
+  height: $circle-size;
+  border: 1px solid $secondary;
+  background-color: $secondary;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  z-index: 2;
+}
+
+.modal-progressbar .modal-step.active {
+  font-weight: bold;
+}
+
+/* 軌道 */
+.modal-progressbar .modal-step:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: $progressbar-height;
+  background-color: $secondary;
+  left: 0;
+  top: calc(($circle-size - $progressbar-height) / 2);
+  z-index: 1;
+}
+
+// 進度條  end =============================================================
+
+
+.modal-image{
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25%;
+  border-radius: 4px;
+  margin-right: 12px;
+  @include md{
+    margin-right: 28px;
+  }
+  &::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+  
+}
+
+.modal-image-lg-column{
+  @include lg {
+    width: 100%;
+    position: relative;
+    margin-right: 0;
+    margin-bottom: 8px;
+
+    
+  }
+}
+
+
+.modal-info{
+  h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: $success;
+  }
+}
+.modal-service-item-active,
+.modal-service-item-hover:hover{
+  border: 3px solid $secondary;
+  
+  .material-icons{
+    color: $warning;
+  }
+  p{
+    color: $success;
+  }
+  
+}
+.modal-service-item{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: $info;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  p{
+    font-size: 14px;
+  }
+  @include md{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    .material-icons{
+      font-size: 40px;
+    }
+    p{
+      font-size: 16px;
+    }
+  }
+}
+
+#reserveModal4 .modal-content{
+  padding-top: 209px;
+  padding-bottom: 209px;
+  .material-icons{
+    font-size: 80px;
+    color: $primary;
+  }
+  @include md{
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+  
+}

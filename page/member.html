@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="../style/all.css" />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="../node_modules/material-icons/iconfont/material-icons.css"
+    />
+    <title>大型寵物服務網-service</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="container-lg px-0 px-lg-12">
+      <nav class="navbar navbar-expand-lg navbar-light pb-0" id="petNavbar">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../image/logo.svg"
+              class="object-fit-cover fs-36"
+              alt="logo"
+              width="121"
+              height="55"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+          >
+            <span class="material-icons"> menu </span>
+          </button>
+        </div>
+        <div class="px-0 px-lg-12 container-lg">
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul
+              class="navbar-nav ms-auto border-top border-lg-0 text-center mb-0"
+            >
+              <li class="nav-item border-bottom border-lg-0 me-lg-32">
+                <a class="nav-link" href="./service.html">預約服務</a>
+              </li>
+              <li class="nav-item border-bottom border-lg-0 me-lg-32">
+                <a class="nav-link" href="#">成為寵物保姆</a>
+              </li>
+              <li class="nav-item dropdown border-bottom border-lg-0">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Hi, Joanne
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item link-success" href="#">會員資料</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item link-success" href="#">預約查詢</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item link-success" href="#">歷史預約</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item link-secondary" href="#"
+                      >切換保母帳號</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- member banner -->
+    <section
+      style="height: calc(100vh - 73px)"
+      class="d-flex align-items-center"
+    >
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 col-lg-5">
+            <h2 class="fs-32 fw-bold text-success mb-40">
+              會員資料<span class="material-icons align-middle ms-8">edit</span>
+            </h2>
+            <!-- member img/name -->
+            <div class="d-flex align-items-center mb-36">
+              <img
+                src="../image/person-2.png"
+                alt="member"
+                class="img-fluid d-block"
+              />
+              <p class="Roboto fw-medium text-success ms-16">Joanne</p>
+            </div>
+            <!-- member infomation -->
+            <ul class="p-0">
+              <li class="row mb-20">
+                <p class="col-3">電子信箱</p>
+                <p class="col-9 text-success">cycample@gmail.com</p>
+              </li>
+              <li class="row mb-20">
+                <p class="col-3">聯絡電話</p>
+                <p class="col-9 text-success">0912-345-789</p>
+              </li>
+              <li class="row mb-20">
+                <p class="col-3">性別</p>
+                <p class="col-9 text-success">女</p>
+              </li>
+              <li class="row">
+                <p class="col-3">聯絡地址</p>
+                <p class="col-9 text-success">高雄市鹽埕區七賢三路123號</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-5">
+            <h1 class="fs-24 fs-md-32 fw-bold text-success lh-base mb-36">
+              Hi, Joanne <br />
+              喜歡我們提供的服務嗎？ <br />
+              現在你也可以成為寵物保姆囉 <br />
+            </h1>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="d-grid">
+                  <button type="button" class="btn btn-secondary text-white">
+                    成為寵物保姆
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bootstrap js -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../index.js"></script>
+  </body>
+</html>

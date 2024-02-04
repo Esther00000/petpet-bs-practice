@@ -1,0 +1,32 @@
+//google font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+// required
+@import "../node_modules/bootstrap/scss/functions";
+
+//  variable
+@import "../style/helper/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+//  customize variable
+
+// required parts
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+@import "../style/helper/reset";
+@import "../style/helper/breakpoint";
+@import "../style/helper/utilities";
+@import "../style/helper/swiper";
+@import "../style/helper/modal";
+@import "../style/helper/custom";
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+

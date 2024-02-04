@@ -1,0 +1,100 @@
+.nanny-Swiper-container {
+    position: relative; // 配合navigation button的位置設定
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  .nannySwiper{
+    --swiper-navigation-size: 44px; // navigation slide 整個區塊大小
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-sides-offset: 10px;
+  }
+
+  
+
+  .nannySwiper { 
+    height: 100%;
+  }
+
+
+
+  // 自訂義 navigation button icon style start
+  .swiper-button-prev,
+  .swiper-button-next{
+    &:after{
+      font-family:'Material Icons';
+      font-size: 44px; 
+      color:$success;
+      background-color: $white;
+      border-radius: 50%;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    &:after {
+      content: ''; // icon
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev{
+    // 調整 位置
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%,50%);
+    &:after {
+      content: '\e1c4'; // icon
+    }
+  }
+}
+
+.gallerySwiper{
+  .swiper {
+      width: 100%;
+      height: 200px;
+      @include lg {
+        height: 440px;
+      }
+    }
+  
+  .main-slider .swiper-image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .main-slider .swiper-image-inner {
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: hue;
+    border-radius: 4px;
+  }
+
+  .main-slider .swiper-slide-active .swiper-image-inner {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .thumb-slider {
+    height: auto;
+  }
+  .thumb-slider .slide-bgimg {
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: hue;
+    padding-bottom: 100%;
+    /* width = height */
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .thumb-slider .slide-bgimg:hover,
+  .thumb-slider .swiper-slide-thumb-active .slide-bgimg {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}

@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="./style/all.css" />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/material-icons/iconfont/material-icons.css"
+    />
+    <title>大型寵物服務網</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="container-lg px-0 px-lg-12">
+      <nav class="navbar navbar-expand-lg navbar-light pb-0" id="petNavbar">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./image/logo.svg"
+              class="object-fit-cover fs-36"
+              alt="logo"
+              width="121"
+              height="55"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+          >
+            <span class="material-icons"> menu </span>
+          </button>
+        </div>
+        <div class="px-0 px-lg-12 container-lg">
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul
+              class="navbar-nav ms-auto border-top border-lg-0 text-center mb-0"
+            >
+              <li class="nav-item border-bottom border-lg-0 me-lg-32">
+                <a class="nav-link" href="./page/service.html">預約服務</a>
+              </li>
+              <li class="nav-item border-bottom border-lg-0 me-lg-32">
+                <a class="nav-link" href="#">成為寵物保姆</a>
+              </li>
+              <li class="nav-item border-bottom border-lg-0">
+                <a class="nav-link" href="./page/login.html">登入</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- banner -->
+    <section id="banner" class="mb-40 mb-md-60 mb-lg-80">
+      <div class="d-lg-flex">
+        <!-- sm & lg img -->
+        <img
+          src="./image/banner.png"
+          class="bannerImg float-start d-md-none d-lg-block mb-12 mb-lg-0"
+          alt="banner"
+        />
+        <!-- md img -->
+        <div class="d-none d-md-block d-lg-none container">
+          <div class="row justify-content-center mb-12">
+            <div class="col-md-4">
+              <img
+                src="./image/banner.png"
+                alt="banner md"
+                class="img-fluid object-fit-cover"
+              />
+            </div>
+          </div>
+        </div>
+        <!--sm & md  info & form -->
+        <div class="d-lg-none container">
+          <div class="row justify-content-center d-lg-none">
+            <div class="col-md-8">
+              <!-- 文字 -->
+              <div class="mb-12">
+                <h1 class="banner-title mb-4">寵物服務，盡在 PETPET</h1>
+                <p class="fs-20 fs-lg-24 fw-bold text-success text-center mb-4">
+                  當您的毛孩有需要時，
+                </p>
+                <p class="fs-20 fs-lg-24 fw-bold text-success text-center">
+                  幫您找到最合適的服務者！
+                </p>
+              </div>
+              <!-- 表單 -->
+              <form>
+                <select class="form-select mb-16">
+                  <option selected disabled>品種</option>
+                  <option value="品種1">品種1</option>
+                  <option value="品種2">品種2</option>
+                  <option value="品種3">品種3</option>
+                </select>
+                <select class="form-select mb-16">
+                  <option selected disabled>服務</option>
+                  <option value="服務1">服務1</option>
+                  <option value="服務2">服務2</option>
+                  <option value="服務3">服務3</option>
+                </select>
+                <select class="form-select mb-12">
+                  <option selected disabled>地區</option>
+                  <option value="地區1">地區1</option>
+                  <option value="地區2">地區2</option>
+                  <option value="地區3">地區3</option>
+                </select>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-secondary">搜尋</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--lg  info & form -->
+        <div class="container d-none d-lg-block ms-18">
+          <div class="d-flex flex-column justify-content-center h-100">
+            <div class="mb-48">
+              <h1 class="banner-title mb-16">寵物服務，盡在 PETPET</h1>
+              <p class="fs-20 fs-lg-24 fw-bold text-success">
+                當您的毛孩有需要時，幫您找到最合適的服務者！
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-12 col-xl-8">
+                <form>
+                  <div class="input-group flex-nowrap search-input-group">
+                    <select class="form-select">
+                      <option selected disabled>品種</option>
+                      <option value="品種1">品種1</option>
+                      <option value="品種2">品種2</option>
+                      <option value="品種3">品種3</option>
+                    </select>
+                    <select class="form-select">
+                      <option selected disabled>服務</option>
+                      <option value="服務1">服務1</option>
+                      <option value="服務2">服務2</option>
+                      <option value="服務3">服務3</option>
+                    </select>
+                    <select class="form-select">
+                      <option selected disabled>地區</option>
+                      <option value="地區1">地區1</option>
+                      <option value="地區2">地區2</option>
+                      <option value="地區3">地區3</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary px-28">
+                      搜尋
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 本月熱門保姆 -->
+    <section class="container mb-40 mb-md-60 mb-lg-80" id="nanny">
+      <div class="mb-12">
+        <h2 class="section-title">本月熱門保姆</h2>
+        <p class="section-subtitle">
+          即時瞭解您的需求，安排最適合毛孩的寵物保姆！
+        </p>
+      </div>
+      <!-- sm cards-->
+      <div class="row row-cols-1 gy-12 d-md-none">
+        <div class="col">
+          <div class="card pb-28 shadow-sm">
+            <div class="card-heading" style="height: 120px">
+              <img
+                src="./image/nanny-bg-1.jpeg"
+                class="img-thumbnail object-fit-cover border-bottom-0 h-100 w-100"
+                alt=""
+              />
+            </div>
+            <div class="avatar">
+              <img src="./image/nanny-person-1.png" alt="" />
+            </div>
+            <div class="card-info mb-24">
+              <h5 class="fw-medium text-success text-center mb-4">Jamie</h5>
+              <p class="text-success text-center mb-12">
+                寄宿、美容、寵物行為訓練
+              </p>
+              <!-- button -->
+              <div class="row">
+                <div class="d-grid mx-auto col-6">
+                  <button
+                    type="button"
+                    class="btn btn-secondary text-white"
+                    onclick="window.location.href = './page/detail.html'"
+                  >
+                    預約
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card-bottom d-flex justify-content-center gap-60">
+              <div>
+                <p>獲得評價</p>
+                <p class="fs-28 fw-bold">
+                  198 <span class="fw-normal fs-14 align-middle">則</span>
+                </p>
+              </div>
+              <div>
+                <p>已完成訂單</p>
+                <p class="fs-28 fw-bold">
+                  580 <span class="fw-normal fs-14 align-middle">件</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card pb-28 shadow-sm">
+            <div class="card-heading" style="height: 120px">
+              <img
+                src="./image/nanny-bg-2.jpeg"
+                class="img-thumbnail object-fit-cover border-bottom-0 h-100 w-100"
+                style="object-position: 50% 30%"
+                alt="nanny-bg-2"
+              />
+            </div>
+            <div class="avatar">
+              <img src="./image/nanny-person-2.png" alt="nanny-person-2" />
+            </div>
+            <div class="card-info mb-24">
+              <h5 class="fw-medium text-success text-center mb-4">Eric</h5>
+              <p class="text-success text-center mb-12">寄宿、美容</p>
+              <!-- button -->
+              <div class="row">
+                <div class="d-grid mx-auto col-6">
+                  <button
+                    type="button"
+                    class="btn btn-secondary text-white"
+                    onclick="window.location.href = './page/detail.html'"
+                  >
+                    預約
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card-bottom d-flex justify-content-center gap-60">
+              <div>
+                <p>獲得評價</p>
+                <p class="fs-28 fw-bold">
+                  76 <span class="fw-normal fs-14 align-middle">則</span>
+                </p>
+              </div>
+              <div>
+                <p>已完成訂單</p>
+                <p class="fs-28 fw-bold">
+                  208 <span class="fw-normal fs-14 align-middle">件</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card pb-28 shadow-sm">
+            <div class="card-heading" style="height: 120px">
+              <img
+                src="./image/nanny-bg-3.jpeg"
+                class="img-thumbnail object-fit-cover border-bottom-0 h-100 w-100"
+                alt="nanny-bg-3"
+              />
+            </div>
+            <div class="avatar">
+              <img src="./image/nanny-person-3.png" alt="nanny-person-3" />
+            </div>
+            <div class="card-info mb-24">
+              <h5 class="fw-medium text-success text-center mb-4">Yvonne</h5>
+              <p class="text-success text-center mb-12">美容、寵物行為訓練</p>
+              <!-- button -->
+              <div class="row">
+                <div class="d-grid mx-auto col-6">
+                  <button
+                    type="button"
+                    class="btn btn-secondary text-white"
+                    onclick="window.location.href = './page/detail.html'"
+                  >
+                    預約
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card-bottom d-flex justify-content-center gap-60">
+              <div>
+                <p>獲得評價</p>
+                <p class="fs-28 fw-bold">
+                  52 <span class="fw-normal fs-14 align-middle">則</span>
+                </p>
+              </div>
+              <div>
+                <p>已完成訂單</p>
+                <p class="fs-28 fw-bold">
+                  196 <span class="fw-normal fs-14 align-middle">件</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- md & lg swiper cards-->
+      <div class="swiper-container nanny-Swiper-container d-none d-md-block">
+        <!-- Slider main container -->
+        <div class="swiper nannySwiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="card pb-28 shadow-sm">
+                <div class="card-heading" style="height: 120px">
+                  <img
+                    src="./image/nanny-bg-1.jpeg"
+                    class="img-thumbnail object-fit-cover border-bottom-0 h-100 w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="avatar">
+                  <img src="./image/nanny-person-1.png" alt="" />
+                </div>
+                <div class="card-info mb-24">
+                  <h5 class="fw-medium text-success text-center mb-4">Jamie</h5>
+                  <p class="text-success text-center mb-12">
+                    寄宿、美容、寵物行為訓練
+                  </p>
+                  <!-- button -->
+                  <div class="row">
+                    <div class="d-grid mx-auto col-6">
+                      <button
+                        type="button"
+                        class="btn btn-secondary text-white"
+                        onclick="window.location.href = './page/detail.html'"
+                      >
+                        預約
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-bottom d-flex justify-content-center gap-60">
+                  <div>
+                    <p>獲得評價</p>
+                    <p class="fs-28 fw-bold">
+                      198 <span class="fw-normal fs-14 align-middle">則</span>
+                    </p>
+                  </div>
+                  <div>
+                    <p>已完成訂單</p>
+                    <p class="fs-28 fw-bold">
+                      580 <span class="fw-normal fs-14 align-middle">件</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card pb-28 shadow-sm">
+                <div class="card-heading" style="height: 120px">
+                  <img
+                    src="./image/nanny-bg-2.jpeg"
+                    class="img-thumbnail object-fit-cover border-bottom-0 h-100 w-100"
+                    style="object-position: 50% 30%"
+                    alt="nanny-bg-2"
+                  />
+                </div>
+                <div class="avatar">
+                  <img src="./image/nanny-person-2.png" alt="nanny-person-2" />
+                </div>
+                <div class="card-info mb-24">
+                  <h5 class="fw-medium text-success text-center mb-4">Eric</h5>
+                  <p class="text-success text-center mb-12">寄宿、美容</p>
+                  <!-- button -->
+                  <div class="row">
+                    <div class="d-grid mx-auto col-6">
+                      <button
+                        type="button"
+                        class="btn btn-secondary text-white"
+                        onclick="window.location.href = './page/detail.html'"
+                      >
+                        預約
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-bottom d-flex justify-content-center gap-60">
+                  <div>
+                    <p>獲得評價</p>
+                    <p class="fs-28 fw-bold">
+                      76 <span class="fw-normal fs-14 align-middle">則</span>
+                    </p>
+                  </div>
+                  <div>
+                    <p>已完成訂單</p>
+                    <p class="fs-28 fw-bold">
+                      208 <span class="fw-normal fs-14 align-middle">件</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card pb-28 shadow-sm">
+                <div class="card-heading" style="height: 120px">
+                  <img
+                    src="./image/nanny-bg-3.jpeg"
+                    class="img-thumbnail object-fit-cover border-bottom-0 h-100 w-100"
+                    alt="nanny-bg-3"
+                  />
+                </div>
+                <div class="avatar">
+                  <img src="./image/nanny-person-3.png" alt="nanny-person-3" />
+                </div>
+                <div class="card-info mb-24">
+                  <h5 class="fw-medium text-success text-center mb-4">
+                    Yvonne
+                  </h5>
+                  <p class="text-success text-center mb-12">
+                    美容、寵物行為訓練
+                  </p>
+                  <!-- button -->
+                  <div class="row">
+                    <div class="d-grid mx-auto col-6">
+                      <button
+                        type="button"
+                        class="btn btn-secondary text-white"
+                        onclick="window.location.href = './page/detail.html'"
+                      >
+                        預約
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-bottom d-flex justify-content-center gap-60">
+                  <div>
+                    <p>獲得評價</p>
+                    <p class="fs-28 fw-bold">
+                      52 <span class="fw-normal fs-14 align-middle">則</span>
+                    </p>
+                  </div>
+                  <div>
+                    <p>已完成訂單</p>
+                    <p class="fs-28 fw-bold">
+                      196 <span class="fw-normal fs-14 align-middle">件</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card pb-28 shadow-sm">
+                <div class="card-heading" style="height: 120px">
+                  <img
+                    src="./image/nanny-bg-1.jpeg"
+                    class="img-thumbnail object-fit-cover border-bottom-0 h-100 w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="avatar">
+                  <img src="./image/nanny-person-1.png" alt="" />
+                </div>
+                <div class="card-info mb-24">
+                  <h5 class="fw-medium text-success text-center mb-4">Jamie</h5>
+                  <p class="text-success text-center mb-12">
+                    寄宿、美容、寵物行為訓練
+                  </p>
+                  <!-- button -->
+                  <div class="row">
+                    <div class="d-grid mx-auto col-6">
+                      <button
+                        type="button"
+                        class="btn btn-secondary text-white"
+                        onclick="window.location.href = './page/detail.html'"
+                      >
+                        預約
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-bottom d-flex justify-content-center gap-60">
+                  <div>
+                    <p>獲得評價</p>
+                    <p class="fs-28 fw-bold">
+                      198 <span class="fw-normal fs-14 align-middle">則</span>
+                    </p>
+                  </div>
+                  <div>
+                    <p>已完成訂單</p>
+                    <p class="fs-28 fw-bold">
+                      580 <span class="fw-normal fs-14 align-middle">件</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card pb-28 shadow-sm">
+                <div class="card-heading" style="height: 120px">
+                  <img
+                    src="./image/nanny-bg-1.jpeg"
+                    class="img-thumbnail object-fit-cover border-bottom-0 h-100 w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="avatar">
+                  <img src="./image/nanny-person-1.png" alt="" />
+                </div>
+                <div class="card-info mb-24">
+                  <h5 class="fw-medium text-success text-center mb-4">Jamie</h5>
+                  <p class="text-success text-center mb-12">
+                    寄宿、美容、寵物行為訓練
+                  </p>
+                  <!-- button -->
+                  <div class="row">
+                    <div class="d-grid mx-auto col-6">
+                      <button
+                        type="button"
+                        class="btn btn-secondary text-white"
+                        onclick="window.location.href = './page/./page/detail.html'"
+                      >
+                        預約
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-bottom d-flex justify-content-center gap-60">
+                  <div>
+                    <p>獲得評價</p>
+                    <p class="fs-28 fw-bold">
+                      198 <span class="fw-normal fs-14 align-middle">則</span>
+                    </p>
+                  </div>
+                  <div>
+                    <p>已完成訂單</p>
+                    <p class="fs-28 fw-bold">
+                      580 <span class="fw-normal fs-14 align-middle">件</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- navigation buttons -->
+        <div class="swiper-button-prev swiper-button-black"></div>
+        <div class="swiper-button-next swiper-button-black"></div>
+      </div>
+    </section>
+    <!-- 線上預約 -->
+    <section class="container mb-40 mb-md-60 mb-lg-80" id="reserve">
+      <div class="mb-12">
+        <h2 class="section-title">線上預約</h2>
+        <p class="section-subtitle">
+          即時瞭解您的需求，安排最適合毛孩的寵物保姆！
+        </p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-4 g-8">
+        <div class="col">
+          <a href="#" class="d-block h-100 position-relative hover-mask">
+            <img
+              src="./image/reserve-1.jpeg"
+              class="img-fluid object-fit-cover"
+              alt=""
+            />
+            <div
+              class="position-absolute top-50 start-50 translate-middle w-100 text-center"
+            >
+              <h5 class="fs-24 fw-bold text-white">寵物寄宿</h5>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="d-block h-100 position-relative hover-mask">
+            <img
+              src="./image/reserve-2.jpeg"
+              class="img-fluid object-fit-cover"
+              alt=""
+            />
+            <div
+              class="position-absolute top-50 start-50 translate-middle w-100 text-center"
+            >
+              <h5 class="fs-24 fw-bold text-white">寵物美容</h5>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <div class="d-flex flex-column justify-content-between h-100">
+            <a href="#" class="d-block h-50 position-relative hover-mask mb-8">
+              <img
+                src="./image/reserve-3.jpeg"
+                class="img-fluid object-fit-cover"
+                alt=""
+              />
+              <div
+                class="position-absolute top-50 start-50 translate-middle w-100 text-center"
+              >
+                <h5 class="fs-24 fw-bold text-white">到府照顧</h5>
+              </div>
+            </a>
+            <a href="#" class="d-block h-50 position-relative hover-mask">
+              <img
+                src="./image/reserve-4.jpeg"
+                class="img-fluid object-fit-cover"
+                alt=""
+              />
+              <div
+                class="position-absolute top-50 start-50 translate-middle w-100 text-center"
+              >
+                <h5 class="fs-24 fw-bold text-white">遛狗保姆</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <a href="#" class="d-block h-100 position-relative hover-mask">
+            <img
+              src="./image/nanny-bg-2.jpeg"
+              class="img-fluid object-fit-cover"
+              alt=""
+            />
+            <div
+              class="position-absolute top-50 start-50 translate-middle w-100 text-center"
+            >
+              <h5 class="fs-24 fw-bold text-white">行為訓練</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- PETPET目前已有 -->
+    <section
+      class="mb-40 mb-md-60 mb-lg-80"
+      style="
+        background-image: url(./image/petpet.jpeg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
+      <div class="container pt-60 pb-125 pt-md-80 pb-md-132">
+        <div class="row">
+          <h2
+            class="fs-40 fw-bold text-center text-md-start text-white mb-48 mb-md-100"
+          >
+            PETPET目前已有
+          </h2>
+          <div class="col-md-3 text-center text-md-start mb-80">
+            <div class="left-line">
+              <p class="fs-48 fw-bold text-white mb-0">5278</p>
+              <p class="fs-20 fw-medium text-white mb-0">人使用 PETPET</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center text-md-start mb-80">
+            <div class="left-line">
+              <p class="fs-48 fw-bold text-white mb-0">5278</p>
+              <p class="fs-20 fw-medium text-white mb-0">人使用 PETPET</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center text-md-start">
+            <div class="left-line">
+              <p class="fs-48 fw-bold text-white mb-0">5278</p>
+              <p class="fs-20 fw-medium text-white mb-0">人使用 PETPET</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 預約流程 -->
+    <section id="flow" class="mb-40 mb-md-60 mb-lg-80">
+      <div class="container">
+        <div class="mb-12">
+          <h2 class="section-title">預約流程</h2>
+          <p class="section-subtitle">輕鬆三步驟，立即獲取最佳服務！</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 gy-32 gy-md-0">
+          <div class="col">
+            <p class="fw-medium fs-20 text-success mb-4">1.查詢想要的服務</p>
+            <img src="./image/flow-1.png" alt="flow 1" class="img-fluid" />
+          </div>
+          <div class="col">
+            <p class="fw-medium fs-20 text-success mb-4">2.找到合適的保姆</p>
+            <img src="./image/flow-2.png" alt="flow 2" class="img-fluid" />
+          </div>
+          <div class="col">
+            <p class="fw-medium fs-20 text-success mb-4">3.填寫資料完成預約</p>
+            <img src="./image/flow-3.png" alt="flow 3" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 有任何我們能幫助您的嗎？ -->
+    <section class="bg-primary">
+      <div class="container py-36">
+        <h4 class="fs-24 fs-md-40 fw-bold text-success mb-12 mb-md-8">
+          有任何我們能幫助您的嗎？
+        </h4>
+        <p class="fs-20 fw-medium text-success mb-16">
+          輸入電子信箱 <br />
+          將有專業人員在線幫您解決所有問題
+        </p>
+        <div class="row">
+          <div class="col-md-9 col-lg-6">
+            <div class="input-group mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="example@gmail.com"
+              />
+              <button class="btn btn-secondary py-12 px-64" type="button">
+                送出
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="container pt-8 pb-24 pt-md-60 pb-md-28">
+      <!-- sm -->
+      <div class="d-md-none">
+        <img
+          src="./image/logo.svg"
+          class="object-fit-cover fs-36 d-block"
+          alt="logo"
+          width="121"
+          height="55"
+        />
+        <small class="text-success">
+          Copyright © 2020 PetPet. All rights reserved.
+        </small>
+      </div>
+      <div class="d-none d-md-block">
+        <!-- top -->
+        <div class="row row-cols-4 align-items-center mb-24">
+          <div class="col">
+            <div class="h-100">
+              <img
+                src="./image/logo.svg"
+                class="object-fit-cover fs-36 d-block"
+                alt="logo"
+                width="121"
+                height="55"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="h-100">
+              <h5 class="fs-20 fw-bold mb-0 text-success">寵物服務</h5>
+            </div>
+          </div>
+          <div class="col">
+            <div class="h-100">
+              <h5 class="fs-20 fw-bold mb-0 text-success">加入我們</h5>
+            </div>
+          </div>
+          <div class="col">
+            <div class="h-100">
+              <h5 class="fs-20 fw-bold mb-0 text-success">聯繫我們</h5>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-4 mb-108">
+          <div class="col">
+            <ul class="list-unstyled d-grid gap-24">
+              <li><a href="#" class="link-success">關於我們</a></li>
+              <li><a href="#" class="link-success">幫助中心</a></li>
+              <li><a href="#" class="link-success">使用條款</a></li>
+              <li><a href="#" class="link-success">隱私政策</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="list-unstyled d-grid gap-24">
+              <li><a href="#" class="link-success">寵物寄宿</a></li>
+              <li><a href="#" class="link-success">寵物到府保姆</a></li>
+              <li><a href="#" class="link-success">寵物美容洗澡</a></li>
+              <li><a href="#" class="link-success">寵物行為訓練</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="list-unstyled d-grid gap-24">
+              <li><a href="#" class="link-success">成為寵物保姆</a></li>
+              <li><a href="#" class="link-success">加入寵物計程車</a></li>
+              <li><a href="#" class="link-success">專屬 APP 下載</a></li>
+              <li><a href="#" class="link-success">相關合約條款</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="list-unstyled d-grid gap-4">
+              <li>
+                <a href="mailto: petpet@petmail.com" class="link-success"
+                  >petpet@petmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- bottom	 -->
+        <div
+          class="d-none d-md-flex justify-content-md-between align-items-md-center"
+        >
+          <div class="d-flex align-items-center gap-12">
+            <span class="material-icons text-success"> call </span>
+            <a href="tel:+886-7-1234567" class="link-success fw-bold"
+              >07-123-4567</a
+            >
+          </div>
+
+          <small class="text-success fw-medium">
+            Copyright © 2020 PetPet. All rights reserved.
+          </small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

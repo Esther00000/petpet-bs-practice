@@ -1,0 +1,133 @@
+// font
+.Roboto{
+  font-family: 'Roboto', sans-serif;
+}
+.text-underline{
+  text-decoration: underline;
+}
+.section-title{
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 4px;
+  color: $success;
+}
+.section-subtitle{
+  font-weight: 500;
+  font-size: 20px;
+  color: $success;
+}
+// cursor
+.cursor-pointer{
+  cursor: pointer;
+}
+// navbar
+#petNavbar {
+  font-size: 20px;
+  font-weight: 500;
+  .nav-link{
+    color: $success;
+  }
+  .navbar-toggler{
+    border: 0px;
+    .material-icons{
+      font-size: 36px !important;
+      color: $primary;
+    }
+    &:focus{
+      box-shadow: none;
+    }
+  }
+}
+
+// banner
+#banner{
+  .bannerImg{
+    width: 100%;
+    height: 352px;
+    object-fit: cover;
+    @include lg{
+      width: 530px;
+      height: calc(100vh - 73px);
+    }
+  }
+  .banner-title{
+    font-size: 28px;
+    font-weight: bold;
+    color: $success;
+    text-align: center;
+    @include md{
+      font-size: 32px;
+    }
+    @include lg{
+      font-size: 40px;
+      text-align: left;
+    }
+  }
+  .search-input-group>.form-select{
+    flex: 1;
+  }
+  .search-input-group>.form-select:nth-child(2){
+    flex: 2;
+  }
+  .search-input-group>.form-select:nth-child(3){
+    flex: 2;
+  }
+}
+
+// nanny 保母
+.avatar{
+  position: relative;
+  margin-bottom: 50px; // 補 top:-50px
+  img{
+    display: inline-block;
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid $white; 
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+// reserve 預約
+#reserve{
+  a img {
+    width: 100%;
+    height: 132px;
+    @include md{
+      height: 100%;
+    }
+  }
+  .hover-mask{
+    background-color: rgba(#000000,0.4);
+    transition:.5s linear;
+    &:hover{
+      background-color: transparent;
+    }
+    img{
+      mix-blend-mode: multiply;
+    }
+  }
+}
+
+// petpet 
+.left-line{
+	height: 120px;
+	border-left: 2px solid $white;
+	padding-left: 16px;
+  display: inline-block;
+  text-align: left;
+	@media(min-width:768px){
+		height: 212px;
+	}
+}
+
+// detail page
+.sticky-sidebar{
+  position: sticky;
+  top: 1rem;
+}
