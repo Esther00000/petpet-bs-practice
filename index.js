@@ -57,8 +57,7 @@ function datePicker(targetStart, targetEnd) {
   });
 }
 const reserveModal = document.getElementById("reserveModa1");
-const myModal = new bootstrap.Modal(document.getElementById("reserveModal4"));
-// console.log(myModal);
+
 reserveModal.addEventListener("shown.bs.modal", () => {
   // detail page
   const detailStart = document.querySelector("#detailStart");
@@ -66,5 +65,5 @@ reserveModal.addEventListener("shown.bs.modal", () => {
   console.log(detailStart, detailEnd);
   datePicker(detailStart, detailEnd);
 });
-myModal.show();
+
 datePicker(serviceStart, serviceEnd);
